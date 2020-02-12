@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Sally Student Resume</title>
+  <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <div id="application-root"></div>
+  
+  <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+  
+  <script type="text/babel">
+        function App() {
+        return (
+    <div>        
+    <header><h1>Sally Student Resume</h1></header>
+    
+       <h2>Contact Now</h2>
+          <h3> Sally Student</h3>
+            <address>
+              <a href="mailto:sallystudent@semantichtml5.com">sallystudent@semantichtml5.com</a>
+              <br></br>
+              (905-000-1111)
+            </address>
+              <img className="profile-picture" src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Sally Student Formal Resume Photo"/>
+      
+    
+  <main>
+      <section>
+        <h2>Education</h2>
+          <ul>
+            <li>Bloc Coding Bootcamp</li>
+            <li>Wilfrid Laurier University</li>
+            <li>Holy Trinity High School</li>
+          </ul>
+      </section>
+      <section>
+        <h2>Employment History</h2>
+          <h3>Current Position</h3>
+          <p>Senior Account Manager - McLean Hallmark Insurance - July 2015 to present
+          </p>
+        <ul>
+          <li>Manage 250 high value insurance policies</li>
+          <li>Communication skills internally and externally</li>
+          <li>Assistant company trainer on new software usage and implementation</li>
+        </ul>
+      </section>
+      
+      <h3>Previous Positions</h3>
+      <p>Corporate Sales Rep - Telstra Telecommunication - June 2014 to July 2015
+      </p>
+      <ul>
+        <li>Work with exisiting Telstra clients to optimize their accounts</li>
+        <li>Mange the Western Australia new business account development team</li>
+        <li>Gained international experience with a diverse team of employees, many on working holiday visas</li>
+      </ul>
+    </main>
+    </div>
+        );
+    };
+
+        // Nested elements inside the App
+        ReactDOM.render(
+        <App />,
+        
+        document.querySelector('#application-root')
+        );
+
+  </script>
+  </body>
+</html>
